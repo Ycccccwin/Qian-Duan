@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Html 中嵌套js的第一种方法-->
+    <!--可以把用户点击按钮看做一个鼠标单击事件 -->
+    <!-- 每一个js事件都会对应一个事件句柄，事件句柄的名称是：on+事件名 -->
+    <!-- js由三部分组成：ECMAScript(核心),DOM,BOM -->
+    <!-- window是js中内置对象，代表这个歌浏览器窗口，属于BOM的一员-->
+    <!--window中有个方法 叫做alert 这个方法可以弹出消息框   -->
+    <!-- js以分号结尾 -->
+    <input type="button" value="click"  onclick="window.alert('hello');
+                                                 window.alert('hello world');
+                                                 alert('l love learn');
+                                                 alert('what should i do?');"/>
+    <!--onclick中可以写多个，且window. 可以省略不写 -->
+</body>
+</html>

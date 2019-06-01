@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Second</title>
+
+
+    <!-- 独立的脚本块，其中可以编写js代码 -->
+    <script type="text/javascript">
+     //<script>标签不一定出现在head标签中，可以出现在html页面中的任何位置
+    
+    // 以下js语句，直接暴露在script标签内部
+    //在整个页面加载的时候，自上而下的顺序一次解释执行
+    // 且alert方法具有阻塞作用，当用户点击“确定”之后，alert语句才算执行完毕
+    //故此行代码执行时，body中的数据是无法加载的，用户看不见
+    window.alert("Hello World");
+    alert("hello");
+    
+    </script>
+</head>
+<body>
+    <a herf="http://www.baidu.com">百度</a>
+    <script type="text/javascript">
+    alert("张三")
+    </script>
+</body>
+</html>
+
+<script type="text/javascript">
+    alert("李四")
+    </script>
